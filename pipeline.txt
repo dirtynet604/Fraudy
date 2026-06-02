@@ -1,0 +1,28 @@
+EML
+ |
+ v
+Loader
+ |
+ v
+Parser
+ |
+ +--> Header Analysis
+ |
+ +--> Body Analysis
+ |
+ +--> URL Analysis
+ |
+ +--> Attachment Analysis
+ |
+ +--> Reputation Analysis
+ |
+ +--> Semantic Analysis (Qwen)
+ |
+ v
+Risk Scoring Engine
+ |
+ v
+Verdict
+ |
+ v
+Report Generator
