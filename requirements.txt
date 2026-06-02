@@ -1,0 +1,12 @@
+pydantic
+tldextract
+dnspython
+python-whois
+requests
+beautifulsoup4
+email-validator
+transformers
+torch
+accelerate
+openai
+python-dotenv   
