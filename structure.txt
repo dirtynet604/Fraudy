@@ -1,0 +1,16 @@
+email-security-ai/
+
+app/
+│
+├── api/
+├── ingestion/
+├── parsers/
+├── analyzers/
+├── intelligence/
+├── llm/
+├── scoring/
+├── reports/
+├── models/
+├── services/
+├── utils/
+└── main.py
