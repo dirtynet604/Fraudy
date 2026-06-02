@@ -1,0 +1,70 @@
+email-security-ai/
+│
+├── app/
+│   ├── main.py
+│   ├── config.py
+│
+│   ├── ingestion/
+│   │   ├── email_loader.py
+│   │   └── eml_reader.py
+│
+│   ├── parsers/
+│   │   ├── email_parser.py
+│   │   ├── header_parser.py
+│   │   ├── body_parser.py
+│   │   ├── attachment_parser.py
+│   │   └── url_extractor.py
+│
+│   ├── analyzers/
+│   │   ├── header_analyzer.py
+│   │   ├── spoof_detector.py
+│   │   ├── url_analyzer.py
+│   │   ├── attachment_analyzer.py
+│   │   ├── reputation_analyzer.py
+│   │   └── semantic_analyzer.py
+│
+│   ├── llm/
+│   │   ├── qwen_client.py
+│   │   ├── llama_client.py
+│   │   ├── prompts/
+│   │   │   ├── phishing_prompt.py
+│   │   │   ├── bec_prompt.py
+│   │   │   └── fraud_prompt.py
+│   │   └── ensemble.py
+│
+│   ├── scoring/
+│   │   ├── risk_engine.py
+│   │   └── confidence_engine.py
+│
+│   ├── models/
+│   │   ├── email.py
+│   │   ├── verdict.py
+│   │   └── indicators.py
+│
+│   ├── services/
+│   │   ├── whois_service.py
+│   │   ├── virustotal_service.py
+│   │   ├── abuseipdb_service.py
+│   │   └── dns_service.py
+│
+│   ├── utils/
+│   │   ├── logger.py
+│   │   ├── helpers.py
+│   │   └── regex_patterns.py
+│
+│   └── reports/
+│       ├── report_generator.py
+│       └── templates/
+│
+├── tests/
+│   ├── test_headers.py
+│   ├── test_urls.py
+│   ├── test_llm.py
+│   └── test_scoring.py
+│
+├── data/
+│   ├── samples/
+│   └── malicious/
+│
+├── requirements.txt
+└── README.md
