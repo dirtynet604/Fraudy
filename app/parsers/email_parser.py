@@ -1,7 +1,11 @@
-from pydantic import BaseModel
+from email import policy
+from email.parser import BytesParser
 
-class Verdict(BaseModel):
-    risk_score: float
-    category: str
-    confidence: float
-    explanation: str
+class EmailParser:
+
+    def parse(self, file_path):
+
+        with open(file_path, "rb") as fp:
+            msg = BytesParser(policy=policy.default).parse(fp)
+
+        return msg
